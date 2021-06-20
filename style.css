@@ -404,7 +404,7 @@ p{
 } */
 .send input{
     display: inline-block;
-    min-width: 180px;
+    min-width: 300px;
     height: 60px;
     width: 100%;
     border-radius: 6px;
@@ -475,7 +475,7 @@ p{
         color: black;
     }
    .footer_wrap{
-       flex-direction: column;
+       flex-wrap: wrap;
    }
    .footer_wrap > div {
         margin: 20px 0;
@@ -487,12 +487,16 @@ p{
        width: 30%;
    }
    .send-btn {
-       right: 145px;
+       right: 20px;
+   }
+
+   .navbar_container nav ul li{
+       margin-right: 10px;
    }
 }
 
 
-@media  (max-width: 1024px) {
+@media  (max-width: 420px) {
    #navUl{
        display: none;
    }
@@ -500,17 +504,23 @@ p{
        display: flex;
        align-items: center;
    }
-    .soc_box{
+   .soc_box{
        justify-content: flex-start;
    }
    .soc_box a {
        margin-left: 0;
        margin-right: 20px;
    }
-   .footer_link_box{
-       flex-wrap: wrap;
-   }
-   
+   .footer_wrap{
+    flex-direction: column;
+}
+
+.send-btn {
+    right: 50px;
+}
+.send input {
+    width: 100px;
+}
 }
 
 
