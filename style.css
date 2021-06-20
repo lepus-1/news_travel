@@ -500,6 +500,13 @@ p{
        display: flex;
        align-items: center;
    }
+    .soc_box{
+       justify-content: flex-start;
+   }
+   .soc_box a {
+       margin-left: 0;
+       margin-right: 20px;
+   }
 }
 
 
