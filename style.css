@@ -404,7 +404,7 @@ p{
 } */
 .send input{
     display: inline-block;
-    min-width: 300px;
+    min-width: 180px;
     height: 60px;
     width: 100%;
     border-radius: 6px;
@@ -507,6 +507,10 @@ p{
        margin-left: 0;
        margin-right: 20px;
    }
+   .footer_link_box{
+       flex-wrap: wrap;
+   }
+   
 }
 
 
