@@ -526,6 +526,25 @@ p{
 
 
 
+/* dropdown */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #d8d6d6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right:-10px;
+    top:48px;
+}
+
+#user {
+    position: relative;
+}
+#user:hover .dropdown_menu {
+    display: block;}
 
 
 
