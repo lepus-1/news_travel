@@ -422,6 +422,7 @@ p{
 
 
 .send-btn {
+    display: inline-block;
     background-image: url("image/send.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -431,7 +432,7 @@ p{
     padding: 10px;
     position:absolute;
     top:20px;
-    right: 10px;
+    right: 30px;
     }
 /* end footer */
 
