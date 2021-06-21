@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow</title>
+</head>
+<body>
+    <style>
+        .arrow {
+            margin: auto;
+            margin: 450px 250px;
+            width: 10px;
+            height: 300px;
+            background-color: brown;           
+            position: relative;
+            animation: left;
+     
+        }
+        .arrow::after {
+            content: " ";
+            display: inline-block;
+            width: 10px;
+            height: 150px;
+            background-color: rgb(55, 14, 216);
+           transform: rotate(-60deg);
+            position: absolute;
+            left: 0px;
+            top: -70px;
+            animation-name: right;    
+            animation-duration: 2s;
+            /* animation-delay: 4s;  */
+            animation-timing-function: linear;
+            animation-iteration-count:infinite; 
+            border: 2px dotted white;
+            
+        }
+
+
+        @keyframes right {
+	0% {   		
+	    transform: rotate(90deg);              
+	} 
+    100% {     
+		 transform: rotate(180deg);       
+        
+	} 
+   
+
+    
+    }
+    @keyframes left {
+		0% {     
+		
+	    transform: rotate(180deg);
+        
+        
+	} 
+    100% {     
+		
+	    transform: rotate(270deg);
+        
+        
+	} 
+   
+
+     }
+    
+   
+
+
+
+        .arrow::before{
+            content: " ";
+            display: inline-block;
+            width: 10px;
+            height: 150px;
+            background-color: rgb(7, 199, 13);
+           transform: rotate(60deg);
+            position: absolute;
+            left: 0px;
+            top: -72px;
+            border: 2px dotted white;
+            animation-name: left;    
+            animation-duration: 2s;
+            /* animation-delay: 4s;  */
+            
+            animation-iteration-count:infinite; 
+            
+        }
+    </style>
+    
+    <div class="arrow"></div>
+</body>
+</html>
