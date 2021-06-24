@@ -547,6 +547,40 @@ p{
     display: block;}
 
 
+.btn_mail{
+    display: flex;
+    align-items: center;
+   min-width: 300px;
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #A6ADB4;
+    border:2px solid #ffffff;
+    padding: 0 10px;}
 
+    .btn_mail input{   
+        display: inline-block;        
+        outline: none;
+        background-color: #A6ADB4;
+        border:none;
+        padding: 0 10px;
+        
+    }
+    .btn_mail input:first-child{
+        width: 90%;
+    }
+    .send input::placeholder{
+        padding-left: 10px;
+        color: #ffffff;
+    }
+    .send_butoon{
+        background-image: url("image/send.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
 
-
+    }
